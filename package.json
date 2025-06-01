@@ -1,0 +1,63 @@
+{
+  "name": "pixelpress",
+  "displayName": "PixelPress – Image Compressor",
+  "description": "Compress image files (.jpg, .jpeg, .png) directly from VSCode with a right-click.",
+  "version": "0.0.3",
+  "publisher": "takuanporipori",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:pixelpress.compressImage"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pixelpress.compressImage",
+        "title": "Compress Image"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceExtname =~ /\\.(png|jpg|jpeg)/",
+          "command": "pixelpress.compressImage",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "PixelPress Settings",
+      "properties": {
+        "pixelpress.quality": {
+          "type": "number",
+          "default": 70,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Compression quality for JPEG/PNG (1–100)"
+        },
+        "pixelpress.saveMode": {
+          "type": "string",
+          "enum": ["overwrite", "suffix"],
+          "default": "suffix",
+          "description": "Save mode: 'overwrite' replaces original, 'suffix' creates a _compressed copy"
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takuan423/pixelpress.git"
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {
+    "sharp": "^0.33.0"
+  }
+}

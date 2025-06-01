@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Compiled output
+dist/
+out/
+*.vsix
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage/
+
+# Mac系不要ファイル
+.DS_Store
+
+# VSCode metadata
+.vscode/
+
+# Build artifacts
+*.tgz
+
+# Optional: .env ファイルや一時設定ファイル
+.env
+.env.local
+
+# VSCode Extension test workspace
+*.code-workspace
+*.code-workspace.*
+.vscode-test/
+.vscode-test-user/

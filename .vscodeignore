@@ -1,0 +1,8 @@
+node_modules/**/test/**
+**/*.map
+.vscode/
+.gitignore
+README.md
+.vsc-extension-quickstart.md
+*.png
+!icon.png
