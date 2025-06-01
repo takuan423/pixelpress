@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [0.0.4] - 2025-06-01
+
+### Added
+- `README.md` に Visual Studio Marketplace の公開URLを追記
+
+---
+
 ## [0.0.2] - 2025-06-01
 
 ### Added

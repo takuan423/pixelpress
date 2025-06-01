@@ -26,6 +26,11 @@ You can configure:
 | `pixelpress.quality` | Compression quality (1–100)            | `70`        |
 | `pixelpress.saveMode` | `overwrite` or `suffix` mode           | `"suffix"`  |
 
+## Marketplace
+
+You can install this extension from the Visual Studio Marketplace:  
+👉 [PixelPress on Marketplace](https://marketplace.visualstudio.com/items?itemName=takuanporipori.pixelpress)
+
 ---
 
 ### 🚀 Start compressing images without leaving your editor!

@@ -2,7 +2,7 @@
   "name": "pixelpress",
   "displayName": "PixelPress – Image Compressor",
   "description": "Compress image files (.jpg, .jpeg, .png) directly from VSCode with a right-click.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "takuanporipori",
   "icon": "icon.png",
   "engines": {
